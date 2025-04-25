@@ -1,0 +1,119 @@
+
+You are a world-class senior full-stack developer and software architect with expertise in data engineering, ClickHouse, Go/Python/Java, and modern frontend frameworks. Build a complete, production-ready Bidirectional ClickHouse ↔ Flat File Data Ingestion Web Application as per the spec below. The solution should follow modern coding standards, be scalable and secure, and include clean UI/UX.
+
+🛠️ Project Title:
+Bidirectional ClickHouse & Flat File Data Ingestion Tool
+
+🎯 Objective:
+Build a fully functional web app that supports data ingestion in both directions:
+
+ClickHouse → Flat File (CSV/TSV)
+
+Flat File → ClickHouse
+
+Include a user-friendly UI and JWT-based authentication for ClickHouse access.
+
+💻 Tech Stack:
+Backend: Python (FastAPI preferred) OR Go/Java (you choose best-fit).
+
+Frontend: React.js or plain HTML/CSS/JS (your call, but UI must be sleek and intuitive).
+
+ClickHouse Library: Use the official ClickHouse client.
+
+JWT Auth: Secure ClickHouse connection using JWT tokens.
+
+File Support: CSV/TSV (custom delimiter support).
+
+Schema Handling: Auto-discover schema, list tables/columns, and allow column-level selection.
+
+Data Transfer: Efficient transfer with streaming or batching.
+
+UI: Source/target selection, config fields, column picker, status/progress indicators, ingestion results, error display.
+
+🔄 Functional Requirements:
+Bidirectional Data Flow:
+
+Flat File → ClickHouse
+
+ClickHouse → Flat File (Downloadable)
+
+Source Selection & Config UI:
+
+Choose source type (ClickHouse/File)
+
+Enter credentials, JWT, file path, delimiter, etc.
+
+ClickHouse Integration:
+
+JWT-based login
+
+Fetch available tables and schemas
+
+Support JOINs (Bonus)
+
+Flat File Integration:
+
+Upload file via UI
+
+Preview and select delimiter
+
+Auto-schema detection
+
+Schema Discovery:
+
+List columns with checkboxes
+
+Show data types
+
+(Bonus) Show sample values
+
+Ingestion Engine:
+
+Real-time record count
+
+Error log window
+
+(Bonus) Progress bar and stats dashboard
+
+Testing:
+
+Use ClickHouse demo datasets
+
+Test all flows (error handling, auth, ingestion, edge cases)
+
+Include test cases
+
+✨ Bonus Features:
+Data Preview Table before ingestion
+
+Multi-table JOIN in ClickHouse as source
+
+Progress bar during ingestion
+
+Responsive design (mobile-friendly)
+
+Dark/light theme toggle
+
+📦 Deliverables:
+✅ Full Source Code (frontend + backend)
+
+✅ Clean and well-commented code
+
+✅ README.md with setup instructions
+
+✅ prompts.txt containing this prompt
+
+✅ (Optional) Demo video
+
+💡 Tips:
+Use modular, production-grade folder structure.
+
+Use dependency injection, typing (if Python), and async handling.
+
+Validate inputs for security.
+
+Follow best practices (e.g., CORS config, rate limiting).
+
+Include environment variable support for sensitive configs.
+
+🔚 End of prompt.
