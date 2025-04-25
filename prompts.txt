@@ -1,0 +1,46 @@
+assignment-1-wrangler-enhancement/prompts.txt
+Prompt used to generate ByteSize and TimeDuration parser enhancements for CDAP Wrangler:
+
+You are a senior Java developer and compiler/DSL engineer with expertise in ANTLR, CDAP Wrangler internals, and custom directive/token parser logic. I want you to enhance the CDAP Wrangler core library to support byte size (e.g., KB, MB, GB) and time duration (e.g., ms, s, m) units.
+
+Generate production-ready, modular Java code and grammar updates with proper test coverage and documentation.
+
+Requirements:
+- Add BYTE_SIZE and TIME_DURATION tokens in Directives.g4.
+- Create ByteSize.java and TimeDuration.java extending Token.
+- Implement parsing logic and getBytes()/getMilliseconds().
+- Update TokenType enums.
+- Add visit methods in visitor logic and TokenGroup usage.
+- Implement a new aggregate directive "aggregate-stats" with size/time columns.
+- Write unit tests for parsing and aggregation.
+- Update README with usage instructions.
+- Include examples and edge cases.
+
+Expected output: Full Java implementation and grammar updates.
+
+
+
+
+assignment-2-clickhouse-flatfile/prompts.txt
+Prompt used to generate the Bidirectional ClickHouse & Flat File Data Ingestion Tool:
+
+You are a world-class senior full-stack developer and software architect with expertise in data engineering, ClickHouse, Go/Python/Java, and modern frontend frameworks. Build a complete, production-ready Bidirectional ClickHouse ↔ Flat File Data Ingestion Web Application.
+
+Tech Stack:
+- Backend: Python (FastAPI)
+- Frontend: React.js
+- JWT-based ClickHouse authentication
+- File ingestion via CSV with delimiter support
+- Use ClickHouse official client library
+
+Requirements:
+- Support ClickHouse → Flat File and Flat File → ClickHouse ingestion
+- UI to select source type, configure credentials, and preview data
+- Display columns and allow column selection
+- Batch or stream data transfer
+- Show progress and record count
+- Error handling with user-friendly messages
+- Include test datasets from ClickHouse (e.g., uk_price_paid)
+- Bonus: Join multiple ClickHouse tables before ingesting
+
+Expected output: Full backend, frontend, and testable working codebase with README and schema discovery logic.
